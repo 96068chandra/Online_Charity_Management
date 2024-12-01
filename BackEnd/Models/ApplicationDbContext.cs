@@ -11,7 +11,7 @@ namespace BackEnd.Models
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
-        public DbSet<Program> Programs { get; set; }
+        public DbSet<Programs> Programs { get; set; }
         public DbSet<Charity> Charities { get; set; }
         public DbSet<Donation> Donations { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
@@ -34,7 +34,7 @@ namespace BackEnd.Models
                 .HasForeignKey(u => u.RoleId);
 
             // Program and Manager
-            modelBuilder.Entity<Program>()
+            modelBuilder.Entity<Programs>()
                 .HasOne(p => p.Manager)
                 .WithMany()
                 .HasForeignKey(p => p.ManagerId);

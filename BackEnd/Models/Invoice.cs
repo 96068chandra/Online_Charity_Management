@@ -32,7 +32,7 @@ namespace BackEnd.Models
         public virtual User Donor { get; set; }
 
         [ForeignKey("ProgramId")]
-        public virtual Program Program { get; set; }
+        public virtual Programs Program { get; set; }
 
         [ForeignKey("CharityId")]
         public virtual Charity Charity { get; set; }

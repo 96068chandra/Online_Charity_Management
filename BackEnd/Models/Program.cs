@@ -1,8 +1,8 @@
 ﻿namespace BackEnd.Models
 {
-    public class Program
+    public class Programs
     {
-        public int ProgramId { get; set; }
+        public int ProgramsId { get; set; }
         public required string ProgramName { get; set; }
         public required string Description { get; set; }
         public string ImageURL { get; set; }
